@@ -19,7 +19,6 @@ public class enemyDamageSys : MonoBehaviour
 
     [SerializeField] private float delayTimeAttack;
 
-
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _bullet;
     [SerializeField] private GameObject _shootPlace;
@@ -29,12 +28,6 @@ public class enemyDamageSys : MonoBehaviour
 
     public static Action enemyDamage;
     public static Action enemyShoot;
-
-
-    private void Start()
-    {
-        
-    }
 
 
     private void OnTriggerStay(Collider other)

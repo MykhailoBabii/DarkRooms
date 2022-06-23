@@ -20,8 +20,6 @@ public class enemyAnimationsController : MonoBehaviour
         enemyDamageSys.enemyDamage += EnemyAttackAnimation;
         enemyMoveSys.enemyIdle += EnemyIdleAnimation;
         enemyDamageSys.enemyShoot += EnemyShootAnimation;
-
-        //PlayerController.playerDie += PlayerDieAnimation;
     }
 
 
@@ -31,8 +29,6 @@ public class enemyAnimationsController : MonoBehaviour
         enemyDamageSys.enemyDamage -= EnemyAttackAnimation;
         enemyMoveSys.enemyIdle -= EnemyIdleAnimation;
         enemyDamageSys.enemyShoot -= EnemyShootAnimation;
-
-        //PlayerController.playerDie -= PlayerDieAnimation;
     }
 
 

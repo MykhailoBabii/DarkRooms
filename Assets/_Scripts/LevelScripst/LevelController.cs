@@ -13,7 +13,6 @@ public class LevelController : MonoBehaviour
 
     public List<GameObject> roomList;
 
-
     [SerializeField] public bool gameStarted;
 
     [SerializeField] private int _getHitCoins;
@@ -21,13 +20,11 @@ public class LevelController : MonoBehaviour
 
     [SerializeField] private float _loadingTime;
     
-
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject _nextLevelDoor;
     [SerializeField] private GameObject _winWindow;
     [SerializeField] private GameObject _loadingWindow;
     [SerializeField] private GameObject _gameOverWindow;
-    //[SerializeField] private GameObject _coinsPanel;
 
     [SerializeField] private Transform _startPosition;
 

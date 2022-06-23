@@ -36,8 +36,6 @@ public class enemyHeathSys : MonoBehaviour
     [SerializeField] enemyTargetSys _enemyTargetSys;
 
     
-
-
     private void Awake()
     {
         hp = maxHp;
@@ -59,7 +57,6 @@ public class enemyHeathSys : MonoBehaviour
         }
 
         _textInfo.transform.rotation = Quaternion.Euler(0, 0, 0);
-
 
         Die();
     }
@@ -85,8 +82,6 @@ public class enemyHeathSys : MonoBehaviour
     {
         if (hp < 1)
         {
-            //enemyDie = true;
-
             if (_explosion != null)
                 _explosion.SetActive(true);
 
@@ -94,10 +89,10 @@ public class enemyHeathSys : MonoBehaviour
                 _enemyTargetSys.enabled = false;
 
             if (enemyAnimations != null)
-            enemyAnimations.EnemyDieAnimation();
+                enemyAnimations.EnemyDieAnimation();
 
             if (_enemyMoveSys != null)
-            _enemyMoveSys.enabled = false;
+                _enemyMoveSys.enabled = false;
 
             if (_enemyDamageSys != null)
             {
@@ -109,9 +104,8 @@ public class enemyHeathSys : MonoBehaviour
             _navMeshAgent.enabled = false;
 
             if (_rigidbody != null)
-            {
                 _rigidbody.isKinematic = true;
-            }
+            
 
             if (_boxCollider != null)
                 _boxCollider.enabled = false;

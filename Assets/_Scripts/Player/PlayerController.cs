@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     public float delayAttack;
 
-
     [SerializeField] private float healthPoints;
     [SerializeField] private float maxHealthPoints;
     [SerializeField] private float maxDelayAttack;
@@ -43,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private PlayerEnemyScaner _scaner;
 
     IEnumerator dieCoroutine;
-    IEnumerator bonusInfo;
+    //IEnumerator bonusInfo;
 
 
 

@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class enemyTargetSys : MonoBehaviour
 {
-    public static enemyTargetSys instance;
-
     private GameObject _player;
 
     [SerializeField] private SphereCollider _sphereCollider;
-
-
-
-    private void Awake()
-    {
-        instance = this;
-    }
 
 
     private void FixedUpdate()
@@ -41,5 +32,4 @@ public class enemyTargetSys : MonoBehaviour
         if (other.CompareTag("Player"))
             _player = other.gameObject;
     }
-
 }

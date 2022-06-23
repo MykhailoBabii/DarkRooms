@@ -1328,8 +1328,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8780418778080400824}
-  - component: {fileID: 8780418778080400817}
-  - component: {fileID: 8780418778080400816}
   - component: {fileID: 8780418778080400822}
   - component: {fileID: 8397637753296614686}
   - component: {fileID: 8780418778080400821}
@@ -1363,53 +1361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!33 &8780418778080400817
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8780418778080400831}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8780418778080400816
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8780418778080400831}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f1779f0d8b6a05547af012556b3fd93a, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!135 &8780418778080400822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1464,16 +1415,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2525fa80c3ebe4504b5727e9db7597cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDie: 0
-  _textInfo: {fileID: 5591094183522517156}
   _healthLine: {fileID: 5649591235239959584}
+  _textInfo: {fileID: 5591094183522517156}
   _impact: {fileID: 6192724089161036641, guid: e17d9a3f04750764c8c0a7a0461e4c3b, type: 3}
   _explosion: {fileID: 0}
   _bonus: {fileID: 3561071404030288225, guid: cb6b20cc36c0640f9b7ad8ebe4b0cc65, type: 3}
   _sphereCollider: {fileID: 8780418778080400822}
   _boxCollider: {fileID: 8397637753296614686}
   _rigidbody: {fileID: 8780418778080400821}
+  hp: 0
   maxHp: 300
+  chanceNumber: 0
   "length\u0421hanceToBonuse": 5
   timeToDestroy: 1
   hightImpactPosition: 0

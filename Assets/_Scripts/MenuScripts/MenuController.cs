@@ -80,16 +80,6 @@ public class MenuController : MonoBehaviour
     }
 
     
-    void Update()
-    {
-        //_musicVolumeSlider.value = _soundsSettings.GetComponent<sounds>()._misicSource.volume * 100;
-        //_soundVolumeSlider.value = _soundsSettings.GetComponent<sounds>()._sfxSource.volume * 100;
-
-
-        if (isPlay == true)
-            Show(_exitGame.gameObject);
-    }
-
     private void RestartGame()
     {
         Hide(_startWindow);
@@ -119,7 +109,6 @@ public class MenuController : MonoBehaviour
 
     private void OptionButton()
     {
-        
         Show(_optionWindow);
     }
 

@@ -22,7 +22,6 @@ public class sounds : MonoBehaviour
         bgSound,
     }
     
-
     public AudioClip[] sfx;
     public AudioClip[] music;
 
@@ -42,7 +41,6 @@ public class sounds : MonoBehaviour
 
         MenuController.changeSfxVolume += ChangeSoundValue;
         MenuController.changeMusicVolume += ChangeSoundValue;
-
     }
 
 
@@ -101,8 +99,4 @@ public class sounds : MonoBehaviour
         }
             
     }
-
-
-    
-
 }

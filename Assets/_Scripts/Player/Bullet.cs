@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifeTime = 5;
 
 
-    
     void Start()
     {
         Destroy(gameObject, lifeTime);

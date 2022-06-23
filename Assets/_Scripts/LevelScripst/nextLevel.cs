@@ -24,8 +24,6 @@ public class nextLevel : MonoBehaviour
                 winLevel?.Invoke();
                 Destroy(other.gameObject);
             }
-
-            
         }
     }
 }
