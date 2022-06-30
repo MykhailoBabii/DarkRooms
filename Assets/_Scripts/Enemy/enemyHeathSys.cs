@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.AI;
 
 
-public class enemyHeathSys : MonoBehaviour
+public class EnemyHeathSys : MonoBehaviour
 {
     public static Action enemyGetHit;
 
@@ -30,10 +30,10 @@ public class enemyHeathSys : MonoBehaviour
     [SerializeField] private float hightImpactPosition;
 
     [SerializeField] NavMeshAgent _navMeshAgent;
-    [SerializeField] enemyAnimationsController enemyAnimations;
-    [SerializeField] enemyMoveSys _enemyMoveSys;
-    [SerializeField] enemyDamageSys _enemyDamageSys;
-    [SerializeField] enemyTargetSys _enemyTargetSys;
+    [SerializeField] EnemyAnimationsController enemyAnimations;
+    [SerializeField] EnemyMoveSys _enemyMoveSys;
+    [SerializeField] EnemyDamageSys _enemyDamageSys;
+    [SerializeField] EnemyTargetSys _enemyTargetSys;
 
     
     private void Awake()
@@ -50,6 +50,12 @@ public class enemyHeathSys : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
+    }
+
+
+    private void HealthLine()
+    {
         if (_healthLine != null)
         {
             _healthLine.fillAmount = hp / maxHp;
@@ -57,8 +63,6 @@ public class enemyHeathSys : MonoBehaviour
         }
 
         _textInfo.transform.rotation = Quaternion.Euler(0, 0, 0);
-
-        Die();
     }
 
 
@@ -75,7 +79,8 @@ public class enemyHeathSys : MonoBehaviour
             StartCoroutine(TextDamageInfo(hp - hpBefore));
         }
 
-        
+        HealthLine();
+        Die();
     }
 
     private void Die()

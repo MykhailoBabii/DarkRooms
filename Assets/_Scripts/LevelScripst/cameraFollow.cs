@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraFollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private GameObject _palyerTarget;
     [SerializeField] private float _centerCalibration;
@@ -11,14 +11,14 @@ public class cameraFollow : MonoBehaviour
 
     private void OnEnable()
     {
-        nextLevel.nextRoomEnter += StabView;
+        NextLevel.nextRoomEnter += StabView;
         
     }
 
 
     private void OnDisable()
     {
-        nextLevel.nextRoomEnter -= StabView;
+        NextLevel.nextRoomEnter -= StabView;
     }
 
     void Start()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyBullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     public float damage;
 

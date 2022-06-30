@@ -13,7 +13,7 @@ public enum EnemyType
 }
 
 
-public class enemyDamageSys : MonoBehaviour
+public class EnemyDamageSys : MonoBehaviour
 {
     public int damage;
 

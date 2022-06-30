@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class sounds : MonoBehaviour
+public class Sounds : MonoBehaviour
 {
-    public static sounds instance;
+    public static Sounds instance;
 
     public enum SFXsounds
     {

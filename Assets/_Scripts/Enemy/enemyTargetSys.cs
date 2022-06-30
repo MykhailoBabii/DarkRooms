@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyTargetSys : MonoBehaviour
+public class EnemyTargetSys : MonoBehaviour
 {
     private GameObject _player;
 

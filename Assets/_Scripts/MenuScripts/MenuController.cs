@@ -157,15 +157,15 @@ public class MenuController : MonoBehaviour
     private void MusicVolumeSlider(float musicLevel)
     {
         changeMusicVolume?.Invoke();
-        sounds._musicVolume = musicLevel / _musicVolumeSlider.maxValue;
-        Debug.Log($"Гучність музики: {sounds._musicVolume}");
+        Sounds._musicVolume = musicLevel / _musicVolumeSlider.maxValue;
+        Debug.Log($"Гучність музики: {Sounds._musicVolume}");
     }
 
     private void SoundVolumeSlider(float soundLevel)
     {
         changeSfxVolume?.Invoke();
-        sounds._sfxVolume = soundLevel / _soundVolumeSlider.maxValue;
-        Debug.Log($"Гучність звуків: {sounds._sfxVolume}");
+        Sounds._sfxVolume = soundLevel / _soundVolumeSlider.maxValue;
+        Debug.Log($"Гучність звуків: {Sounds._sfxVolume}");
     }
 
 

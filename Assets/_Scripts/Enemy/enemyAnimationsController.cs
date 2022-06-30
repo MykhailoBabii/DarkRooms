@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyAnimationsController : MonoBehaviour
+public class EnemyAnimationsController : MonoBehaviour
 {
     private const string IdleTriggerName = "Idle";
     private const string RunTriggerName = "Run";
@@ -16,19 +16,19 @@ public class enemyAnimationsController : MonoBehaviour
 
     private void OnEnable()
     {
-        enemyMoveSys.enemyMove += EnemyMoveAnimation;
-        enemyDamageSys.enemyDamage += EnemyAttackAnimation;
-        enemyMoveSys.enemyIdle += EnemyIdleAnimation;
-        enemyDamageSys.enemyShoot += EnemyShootAnimation;
+        EnemyMoveSys.enemyMove += EnemyMoveAnimation;
+        EnemyDamageSys.enemyDamage += EnemyAttackAnimation;
+        EnemyMoveSys.enemyIdle += EnemyIdleAnimation;
+        EnemyDamageSys.enemyShoot += EnemyShootAnimation;
     }
 
 
     private void OnDisable()
     {
-        enemyMoveSys.enemyMove -= EnemyMoveAnimation;
-        enemyDamageSys.enemyDamage -= EnemyAttackAnimation;
-        enemyMoveSys.enemyIdle -= EnemyIdleAnimation;
-        enemyDamageSys.enemyShoot -= EnemyShootAnimation;
+        EnemyMoveSys.enemyMove -= EnemyMoveAnimation;
+        EnemyDamageSys.enemyDamage -= EnemyAttackAnimation;
+        EnemyMoveSys.enemyIdle -= EnemyIdleAnimation;
+        EnemyDamageSys.enemyShoot -= EnemyShootAnimation;
     }
 
 

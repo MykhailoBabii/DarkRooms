@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class nextLevel : MonoBehaviour
+public class NextLevel : MonoBehaviour
 {
     public static Action nextRoomEnter;
     public static Action winLevel;

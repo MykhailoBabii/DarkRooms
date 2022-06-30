@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
     //IEnumerator bonusInfo;
 
 
+    
+
 
     private void Awake()
     {
@@ -68,7 +70,6 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Attack();
-        Die();
     }
 
 
@@ -124,7 +125,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag(Tags.enemyBullet))
         {
             playerGetHit?.Invoke();
-            healthPoints -= collision.gameObject.GetComponent<enemyBullet>().damage;
+            healthPoints -= collision.gameObject.GetComponent<EnemyBullet>().damage;
         }
         
         else if (collision.gameObject.CompareTag(Tags.healthBonus))
@@ -152,6 +153,8 @@ public class PlayerController : MonoBehaviour
         }
             
         else return;
+
+        Die();
     }
 
 
@@ -172,8 +175,8 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if(_enemyAttacker.GetComponent<enemyDamageSys>() != null)
-        healthPoints -= _enemyAttacker.GetComponent<enemyDamageSys>().damage;
+        if(_enemyAttacker.GetComponent<EnemyDamageSys>() != null)
+        healthPoints -= _enemyAttacker.GetComponent<EnemyDamageSys>().damage;
         playerGetHit?.Invoke();
         StopAllCoroutines();
     }

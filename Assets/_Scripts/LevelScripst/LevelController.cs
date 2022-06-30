@@ -37,11 +37,11 @@ public class LevelController : MonoBehaviour
     {
         PlayerController.playerGetHit += GetHitScore;
         PlayerController.playerDie += GameOverWindow;
-        enemyHeathSys.enemyGetHit += TakeHitScore;
+        EnemyHeathSys.enemyGetHit += TakeHitScore;
         PlayerEnemyScaner.enemyDetection += RoomComplate;
         MenuController.startGame += RoomSearch;
-        nextLevel.nextRoomEnter += RoomSearch;
-        nextLevel.winLevel += ShowScoreCoins;
+        NextLevel.nextRoomEnter += RoomSearch;
+        NextLevel.winLevel += ShowScoreCoins;
     }
 
 
@@ -49,11 +49,11 @@ public class LevelController : MonoBehaviour
     {
         PlayerController.playerGetHit -= GetHitScore;
         PlayerController.playerDie -= GameOverWindow;
-        enemyHeathSys.enemyGetHit -= TakeHitScore;
+        EnemyHeathSys.enemyGetHit -= TakeHitScore;
         PlayerEnemyScaner.enemyDetection -= RoomComplate;
         MenuController.startGame -= RoomSearch;
-        nextLevel.nextRoomEnter -= RoomSearch;
-        nextLevel.winLevel -= ShowScoreCoins;
+        NextLevel.nextRoomEnter -= RoomSearch;
+        NextLevel.winLevel -= ShowScoreCoins;
     }
 
 

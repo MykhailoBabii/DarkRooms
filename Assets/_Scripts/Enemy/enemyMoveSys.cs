@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class enemyMoveSys : MonoBehaviour
+public class EnemyMoveSys : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent _navMeshAgent;
     [SerializeField] private GameObject _player;
